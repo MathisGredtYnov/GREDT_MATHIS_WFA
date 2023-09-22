@@ -103,6 +103,26 @@ namespace Platform_Game_Tutorial_MOO_ICT.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap echelle {
+            get {
+                object obj = ResourceManager.GetObject("echelle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap echelle1 {
+            get {
+                object obj = ResourceManager.GetObject("echelle1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap platform {
             get {
                 object obj = ResourceManager.GetObject("platform", resourceCulture);

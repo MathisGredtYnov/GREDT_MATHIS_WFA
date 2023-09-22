@@ -32,6 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.txtScore = new System.Windows.Forms.Label();
             this.gameTimer = new System.Windows.Forms.Timer(this.components);
+            this.pictureBox30 = new System.Windows.Forms.PictureBox();
             this.enemyTwo = new System.Windows.Forms.PictureBox();
             this.enemyOne = new System.Windows.Forms.PictureBox();
             this.pictureBox28 = new System.Windows.Forms.PictureBox();
@@ -67,6 +68,7 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.enemyTwo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.enemyOne)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).BeginInit();
@@ -121,6 +123,17 @@
             this.gameTimer.Interval = 20;
             this.gameTimer.Tick += new System.EventHandler(this.MainGameTimerEvent);
             // 
+            // pictureBox30
+            // 
+            this.pictureBox30.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox30.Image = global::Platform_Game_Tutorial_MOO_ICT.Properties.Resources.echelle1;
+            this.pictureBox30.Location = new System.Drawing.Point(47, 284);
+            this.pictureBox30.Name = "pictureBox30";
+            this.pictureBox30.Size = new System.Drawing.Size(69, 216);
+            this.pictureBox30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox30.TabIndex = 25;
+            this.pictureBox30.TabStop = false;
+            // 
             // enemyTwo
             // 
             this.enemyTwo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
@@ -140,7 +153,6 @@
             this.enemyOne.TabIndex = 3;
             this.enemyOne.TabStop = false;
             this.enemyOne.Tag = "enemy";
-            this.enemyOne.Click += new System.EventHandler(this.enemyOne_Click);
             // 
             // pictureBox28
             // 
@@ -443,7 +455,7 @@
             // player
             // 
             this.player.BackColor = System.Drawing.Color.DarkBlue;
-            this.player.Location = new System.Drawing.Point(67, 676);
+            this.player.Location = new System.Drawing.Point(47, 693);
             this.player.Name = "player";
             this.player.Size = new System.Drawing.Size(30, 40);
             this.player.TabIndex = 2;
@@ -580,9 +592,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightBlue;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(654, 761);
+            this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.enemyTwo);
             this.Controls.Add(this.enemyOne);
             this.Controls.Add(this.pictureBox28);
@@ -611,7 +623,6 @@
             this.Controls.Add(this.player);
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.horizontalPlatform);
-            this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.verticalPlatform);
@@ -619,11 +630,13 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtScore);
+            this.Controls.Add(this.pictureBox30);
             this.Name = "Form1";
             this.Text = " ";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyIsDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyIsUp);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.enemyTwo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.enemyOne)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).EndInit();
@@ -702,6 +715,7 @@
         private System.Windows.Forms.PictureBox pictureBox27;
         private System.Windows.Forms.PictureBox pictureBox28;
         private System.Windows.Forms.PictureBox pictureBox29;
+        private System.Windows.Forms.PictureBox pictureBox30;
     }
 }
 
