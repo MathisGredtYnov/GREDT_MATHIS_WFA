@@ -564,6 +564,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.SlateGray;
+            this.pictureBox1.BackgroundImage = global::Platform_Game_Tutorial_MOO_ICT.Properties.Resources.terre;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(-7, 736);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(0);
@@ -579,6 +580,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightBlue;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(654, 761);
             this.Controls.Add(this.enemyTwo);
             this.Controls.Add(this.enemyOne);
@@ -617,7 +620,8 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtScore);
             this.Name = "Form1";
-            this.Text = "Platform Game MOO ICT";
+            this.Text = " ";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyIsDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyIsUp);
             ((System.ComponentModel.ISupportInitialize)(this.enemyTwo)).EndInit();

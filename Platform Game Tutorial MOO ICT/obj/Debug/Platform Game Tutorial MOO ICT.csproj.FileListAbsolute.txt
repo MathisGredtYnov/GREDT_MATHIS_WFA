@@ -28,3 +28,13 @@ C:\Users\mathi\Documents\B2\Platform-Game-in-Windows-Form\Platform Game Tutorial
 C:\Users\mathi\Documents\B2\Platform-Game-in-Windows-Form\Platform Game Tutorial MOO ICT\obj\Debug\Platform Game Tutorial MOO ICT.csproj.CoreCompileInputs.cache
 C:\Users\mathi\Documents\B2\Platform-Game-in-Windows-Form\Platform Game Tutorial MOO ICT\obj\Debug\Platform Game Tutorial MOO ICT.exe
 C:\Users\mathi\Documents\B2\Platform-Game-in-Windows-Form\Platform Game Tutorial MOO ICT\obj\Debug\Platform Game Tutorial MOO ICT.pdb
+C:\Users\mathi\Documents\B2\projet c#\GREDT_MATHIS_WFA\Platform Game Tutorial MOO ICT\bin\Debug\Platform Game Tutorial MOO ICT.exe.config
+C:\Users\mathi\Documents\B2\projet c#\GREDT_MATHIS_WFA\Platform Game Tutorial MOO ICT\bin\Debug\Platform Game Tutorial MOO ICT.exe
+C:\Users\mathi\Documents\B2\projet c#\GREDT_MATHIS_WFA\Platform Game Tutorial MOO ICT\bin\Debug\Platform Game Tutorial MOO ICT.pdb
+C:\Users\mathi\Documents\B2\projet c#\GREDT_MATHIS_WFA\Platform Game Tutorial MOO ICT\obj\Debug\Platform Game Tutorial MOO ICT.csproj.AssemblyReference.cache
+C:\Users\mathi\Documents\B2\projet c#\GREDT_MATHIS_WFA\Platform Game Tutorial MOO ICT\obj\Debug\Platform_Game_Tutorial_MOO_ICT.Form1.resources
+C:\Users\mathi\Documents\B2\projet c#\GREDT_MATHIS_WFA\Platform Game Tutorial MOO ICT\obj\Debug\Platform_Game_Tutorial_MOO_ICT.Properties.Resources.resources
+C:\Users\mathi\Documents\B2\projet c#\GREDT_MATHIS_WFA\Platform Game Tutorial MOO ICT\obj\Debug\Platform Game Tutorial MOO ICT.csproj.GenerateResource.cache
+C:\Users\mathi\Documents\B2\projet c#\GREDT_MATHIS_WFA\Platform Game Tutorial MOO ICT\obj\Debug\Platform Game Tutorial MOO ICT.csproj.CoreCompileInputs.cache
+C:\Users\mathi\Documents\B2\projet c#\GREDT_MATHIS_WFA\Platform Game Tutorial MOO ICT\obj\Debug\Platform Game Tutorial MOO ICT.exe
+C:\Users\mathi\Documents\B2\projet c#\GREDT_MATHIS_WFA\Platform Game Tutorial MOO ICT\obj\Debug\Platform Game Tutorial MOO ICT.pdb
