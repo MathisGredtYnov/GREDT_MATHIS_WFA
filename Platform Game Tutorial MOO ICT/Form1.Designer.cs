@@ -32,7 +32,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.txtScore = new System.Windows.Forms.Label();
             this.gameTimer = new System.Windows.Forms.Timer(this.components);
-            this.pictureBox30 = new System.Windows.Forms.PictureBox();
+            this.door = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.enemyTwo = new System.Windows.Forms.PictureBox();
             this.enemyOne = new System.Windows.Forms.PictureBox();
             this.pictureBox28 = new System.Windows.Forms.PictureBox();
@@ -57,18 +58,18 @@
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.door = new System.Windows.Forms.PictureBox();
             this.player = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.horizontalPlatform = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.verticalPlatform = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).BeginInit();
+            this.pictureBox30 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.door)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.enemyTwo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.enemyOne)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).BeginInit();
@@ -93,17 +94,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.door)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.player)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.horizontalPlatform)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.verticalPlatform)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).BeginInit();
             this.SuspendLayout();
             // 
             // txtScore
@@ -123,36 +123,57 @@
             this.gameTimer.Interval = 20;
             this.gameTimer.Tick += new System.EventHandler(this.MainGameTimerEvent);
             // 
-            // pictureBox30
+            // door
             // 
-            this.pictureBox30.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox30.Image = global::Platform_Game_Tutorial_MOO_ICT.Properties.Resources.echelle1;
-            this.pictureBox30.Location = new System.Drawing.Point(47, 284);
-            this.pictureBox30.Name = "pictureBox30";
-            this.pictureBox30.Size = new System.Drawing.Size(69, 216);
-            this.pictureBox30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox30.TabIndex = 25;
-            this.pictureBox30.TabStop = false;
+            this.door.BackColor = System.Drawing.Color.Transparent;
+            this.door.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.door.Image = global::Platform_Game_Tutorial_MOO_ICT.Properties.Resources.portail;
+            this.door.Location = new System.Drawing.Point(12, 10);
+            this.door.Name = "door";
+            this.door.Size = new System.Drawing.Size(42, 58);
+            this.door.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.door.TabIndex = 2;
+            this.door.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackColor = System.Drawing.Color.SlateGray;
+            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(35, 300);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(127, 30);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 1;
+            this.pictureBox6.TabStop = false;
+            this.pictureBox6.Tag = "platform";
             // 
             // enemyTwo
             // 
-            this.enemyTwo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.enemyTwo.BackColor = System.Drawing.Color.Transparent;
+            this.enemyTwo.Image = ((System.Drawing.Image)(resources.GetObject("enemyTwo.Image")));
             this.enemyTwo.Location = new System.Drawing.Point(360, 616);
             this.enemyTwo.Name = "enemyTwo";
-            this.enemyTwo.Size = new System.Drawing.Size(30, 40);
+            this.enemyTwo.Size = new System.Drawing.Size(55, 40);
+            this.enemyTwo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.enemyTwo.TabIndex = 4;
             this.enemyTwo.TabStop = false;
             this.enemyTwo.Tag = "enemy";
             // 
             // enemyOne
             // 
-            this.enemyOne.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.enemyOne.BackColor = System.Drawing.Color.Transparent;
+            this.enemyOne.ErrorImage = global::Platform_Game_Tutorial_MOO_ICT.Properties.Resources.mob1;
+            this.enemyOne.Image = ((System.Drawing.Image)(resources.GetObject("enemyOne.Image")));
             this.enemyOne.Location = new System.Drawing.Point(473, 357);
             this.enemyOne.Name = "enemyOne";
-            this.enemyOne.Size = new System.Drawing.Size(30, 40);
+            this.enemyOne.Size = new System.Drawing.Size(55, 40);
+            this.enemyOne.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.enemyOne.TabIndex = 3;
             this.enemyOne.TabStop = false;
             this.enemyOne.Tag = "enemy";
+            this.enemyOne.Click += new System.EventHandler(this.enemyOne_Click_1);
             // 
             // pictureBox28
             // 
@@ -440,24 +461,13 @@
             this.pictureBox13.TabStop = false;
             this.pictureBox13.Tag = "coin";
             // 
-            // door
-            // 
-            this.door.BackColor = System.Drawing.Color.Transparent;
-            this.door.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.door.Image = global::Platform_Game_Tutorial_MOO_ICT.Properties.Resources.portail;
-            this.door.Location = new System.Drawing.Point(12, 10);
-            this.door.Name = "door";
-            this.door.Size = new System.Drawing.Size(42, 58);
-            this.door.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.door.TabIndex = 2;
-            this.door.TabStop = false;
-            // 
             // player
             // 
-            this.player.BackColor = System.Drawing.Color.DarkBlue;
+            this.player.BackColor = System.Drawing.Color.MidnightBlue;
             this.player.Location = new System.Drawing.Point(47, 693);
             this.player.Name = "player";
             this.player.Size = new System.Drawing.Size(30, 40);
+            this.player.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.player.TabIndex = 2;
             this.player.TabStop = false;
             // 
@@ -488,20 +498,6 @@
             this.horizontalPlatform.TabIndex = 1;
             this.horizontalPlatform.TabStop = false;
             this.horizontalPlatform.Tag = "platform";
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackColor = System.Drawing.Color.SlateGray;
-            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(35, 300);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(127, 30);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 1;
-            this.pictureBox6.TabStop = false;
-            this.pictureBox6.Tag = "platform";
             // 
             // pictureBox5
             // 
@@ -587,6 +583,17 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Tag = "platform";
             // 
+            // pictureBox30
+            // 
+            this.pictureBox30.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox30.Image = global::Platform_Game_Tutorial_MOO_ICT.Properties.Resources.echelle1;
+            this.pictureBox30.Location = new System.Drawing.Point(47, 284);
+            this.pictureBox30.Name = "pictureBox30";
+            this.pictureBox30.Size = new System.Drawing.Size(69, 216);
+            this.pictureBox30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox30.TabIndex = 25;
+            this.pictureBox30.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -594,9 +601,8 @@
             this.BackColor = System.Drawing.Color.LightBlue;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(654, 761);
+            this.Controls.Add(this.door);
             this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.enemyTwo);
-            this.Controls.Add(this.enemyOne);
             this.Controls.Add(this.pictureBox28);
             this.Controls.Add(this.pictureBox29);
             this.Controls.Add(this.pictureBox26);
@@ -619,7 +625,6 @@
             this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.pictureBox14);
             this.Controls.Add(this.pictureBox13);
-            this.Controls.Add(this.door);
             this.Controls.Add(this.player);
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.horizontalPlatform);
@@ -631,12 +636,15 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtScore);
             this.Controls.Add(this.pictureBox30);
+            this.Controls.Add(this.enemyOne);
+            this.Controls.Add(this.enemyTwo);
             this.Name = "Form1";
             this.Text = " ";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyIsDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyIsUp);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.door)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.enemyTwo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.enemyOne)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).EndInit();
@@ -661,17 +669,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.door)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.player)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.horizontalPlatform)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.verticalPlatform)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).EndInit();
             this.ResumeLayout(false);
 
         }

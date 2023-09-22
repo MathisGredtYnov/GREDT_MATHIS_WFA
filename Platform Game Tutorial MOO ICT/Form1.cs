@@ -73,7 +73,7 @@ namespace Platform_Game_Tutorial_MOO_ICT
                     {
                         if (player.Bounds.IntersectsWith(x.Bounds))
                         {
-                            force = 8;
+                            force = 20;
                             player.Top = x.Top - player.Height;
 
 
@@ -170,6 +170,11 @@ namespace Platform_Game_Tutorial_MOO_ICT
         }
 
         private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void enemyOne_Click_1(object sender, EventArgs e)
         {
 
         }
