@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Drawing;
 
 namespace Platform_Game_Tutorial_MOO_ICT
 {
@@ -73,7 +74,7 @@ namespace Platform_Game_Tutorial_MOO_ICT
                     {
                         if (player.Bounds.IntersectsWith(x.Bounds))
                         {
-                            force = 20;
+                            force = 10;
                             player.Top = x.Top - player.Height;
 
 
@@ -150,7 +151,7 @@ namespace Platform_Game_Tutorial_MOO_ICT
                 txtScore.Text = "Score: " + score + Environment.NewLine + "You fell to your death!";
             }
 
-            if (player.Bounds.IntersectsWith(door.Bounds) && score == 26)
+            if (player.Bounds.IntersectsWith(door.Bounds) && score == 22)
             {
                 gameTimer.Stop();
                 isGameOver = true;
@@ -179,15 +180,34 @@ namespace Platform_Game_Tutorial_MOO_ICT
 
         }
 
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void player_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void door_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void KeyIsDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Left)
             {
                 goLeft = true;
+                // Chargez l'image du personnage qui regarde vers la gauche
+                player.Image = Properties.Resources.personnage_gauche; // Remplacez "left_image" par le nom de votre image pour la gauche
             }
             if (e.KeyCode == Keys.Right)
             {
                 goRight = true;
+                // Chargez l'image du personnage qui regarde vers la droite
+                player.Image = Properties.Resources.personnage_droite; // Remplacez "right_image" par le nom de votre image pour la droite
             }
             if (e.KeyCode == Keys.Space && jumping == false)
             {
@@ -214,8 +234,6 @@ namespace Platform_Game_Tutorial_MOO_ICT
             {
                 RestartGame();
             }
-
-
         }
 
         private void RestartGame()
@@ -240,8 +258,8 @@ namespace Platform_Game_Tutorial_MOO_ICT
 
             // reset the position of player, platform and enemies
 
-            player.Left = 72;
-            player.Top = 656;
+            player.Left = 60;
+            player.Top = 680;
 
             enemyOne.Left = 471;
             enemyTwo.Left = 360;

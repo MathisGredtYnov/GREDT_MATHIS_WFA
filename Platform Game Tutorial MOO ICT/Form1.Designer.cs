@@ -134,6 +134,8 @@
             this.door.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.door.TabIndex = 2;
             this.door.TabStop = false;
+            this.door.Tag = "door";
+            this.door.Click += new System.EventHandler(this.door_Click);
             // 
             // pictureBox6
             // 
@@ -164,7 +166,6 @@
             // enemyOne
             // 
             this.enemyOne.BackColor = System.Drawing.Color.Transparent;
-            this.enemyOne.ErrorImage = global::Platform_Game_Tutorial_MOO_ICT.Properties.Resources.mob1;
             this.enemyOne.Image = ((System.Drawing.Image)(resources.GetObject("enemyOne.Image")));
             this.enemyOne.Location = new System.Drawing.Point(473, 357);
             this.enemyOne.Name = "enemyOne";
@@ -463,13 +464,16 @@
             // 
             // player
             // 
-            this.player.BackColor = System.Drawing.Color.MidnightBlue;
+            this.player.BackColor = System.Drawing.Color.Transparent;
+            this.player.Image = global::Platform_Game_Tutorial_MOO_ICT.Properties.Resources.personnage_droite;
             this.player.Location = new System.Drawing.Point(47, 693);
             this.player.Name = "player";
             this.player.Size = new System.Drawing.Size(30, 40);
             this.player.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.player.TabIndex = 2;
             this.player.TabStop = false;
+            this.player.Tag = "door";
+            this.player.Click += new System.EventHandler(this.player_Click);
             // 
             // pictureBox8
             // 
@@ -512,6 +516,7 @@
             this.pictureBox5.TabIndex = 1;
             this.pictureBox5.TabStop = false;
             this.pictureBox5.Tag = "platform";
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // pictureBox4
             // 
@@ -586,10 +591,10 @@
             // pictureBox30
             // 
             this.pictureBox30.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox30.Image = global::Platform_Game_Tutorial_MOO_ICT.Properties.Resources.echelle1;
-            this.pictureBox30.Location = new System.Drawing.Point(47, 284);
+            this.pictureBox30.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox30.Image")));
+            this.pictureBox30.Location = new System.Drawing.Point(48, 285);
             this.pictureBox30.Name = "pictureBox30";
-            this.pictureBox30.Size = new System.Drawing.Size(69, 216);
+            this.pictureBox30.Size = new System.Drawing.Size(85, 216);
             this.pictureBox30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox30.TabIndex = 25;
             this.pictureBox30.TabStop = false;
@@ -602,7 +607,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(654, 761);
-            this.Controls.Add(this.door);
+            this.Controls.Add(this.player);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox28);
             this.Controls.Add(this.pictureBox29);
@@ -626,7 +631,6 @@
             this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.pictureBox14);
             this.Controls.Add(this.pictureBox13);
-            this.Controls.Add(this.player);
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.horizontalPlatform);
             this.Controls.Add(this.pictureBox5);
@@ -637,8 +641,10 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtScore);
             this.Controls.Add(this.pictureBox30);
+            this.Controls.Add(this.door);
             this.Controls.Add(this.enemyOne);
             this.Controls.Add(this.enemyTwo);
+            this.DoubleBuffered = true;
             this.Name = "Form1";
             this.Text = " ";
             this.Load += new System.EventHandler(this.Form1_Load);

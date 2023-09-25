@@ -63,16 +63,6 @@ namespace Platform_Game_Tutorial_MOO_ICT.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap background {
-            get {
-                object obj = ResourceManager.GetObject("background", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap background1 {
             get {
                 object obj = ResourceManager.GetObject("background1", resourceCulture);
@@ -113,46 +103,6 @@ namespace Platform_Game_Tutorial_MOO_ICT.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap echelle1 {
-            get {
-                object obj = ResourceManager.GetObject("echelle1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap mob {
-            get {
-                object obj = ResourceManager.GetObject("mob", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap mob1 {
-            get {
-                object obj = ResourceManager.GetObject("mob1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap mob2 {
-            get {
-                object obj = ResourceManager.GetObject("mob2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap personnage {
             get {
                 object obj = ResourceManager.GetObject("personnage", resourceCulture);
@@ -163,9 +113,9 @@ namespace Platform_Game_Tutorial_MOO_ICT.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap platform {
+        internal static System.Drawing.Bitmap personnage_droite {
             get {
-                object obj = ResourceManager.GetObject("platform", resourceCulture);
+                object obj = ResourceManager.GetObject("personnage_droite", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -173,19 +123,9 @@ namespace Platform_Game_Tutorial_MOO_ICT.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap platform1 {
+        internal static System.Drawing.Bitmap personnage_gauche {
             get {
-                object obj = ResourceManager.GetObject("platform1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap platform2 {
-            get {
-                object obj = ResourceManager.GetObject("platform2", resourceCulture);
+                object obj = ResourceManager.GetObject("personnage_gauche", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
