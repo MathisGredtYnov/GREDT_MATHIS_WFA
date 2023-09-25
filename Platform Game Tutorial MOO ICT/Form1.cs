@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing;
+using System.Media;
 
 namespace Platform_Game_Tutorial_MOO_ICT
 {
@@ -26,13 +27,16 @@ namespace Platform_Game_Tutorial_MOO_ICT
 
         int enemyOneSpeed = 5;
         int enemyTwoSpeed = 3;
-
-
+        private readonly SoundPlayer backgroundMusic;
 
         public Form1()
         {
             InitializeComponent();
+            backgroundMusic = new SoundPlayer(Properties.Resources.Megalovania);
+            backgroundMusic.PlayLooping();
+                  
         }
+
 
         private void MainGameTimerEvent(object sender, EventArgs e)
         {
@@ -74,7 +78,7 @@ namespace Platform_Game_Tutorial_MOO_ICT
                     {
                         if (player.Bounds.IntersectsWith(x.Bounds))
                         {
-                            force = 10;
+                            force = 8;
                             player.Top = x.Top - player.Height;
 
 
@@ -109,7 +113,6 @@ namespace Platform_Game_Tutorial_MOO_ICT
                             txtScore.Text = "Score: " + score + Environment.NewLine + "You were killed in your journey!!";
                         }
                     }
-
                 }
             }
 
