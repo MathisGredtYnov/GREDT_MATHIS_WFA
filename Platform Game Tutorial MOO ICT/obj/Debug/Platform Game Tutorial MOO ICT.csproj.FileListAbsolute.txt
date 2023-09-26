@@ -38,3 +38,4 @@ C:\Users\mathi\Documents\B2\projet c#\GREDT_MATHIS_WFA\Platform Game Tutorial MO
 C:\Users\mathi\Documents\B2\projet c#\GREDT_MATHIS_WFA\Platform Game Tutorial MOO ICT\obj\Debug\Platform Game Tutorial MOO ICT.csproj.CoreCompileInputs.cache
 C:\Users\mathi\Documents\B2\projet c#\GREDT_MATHIS_WFA\Platform Game Tutorial MOO ICT\obj\Debug\Platform Game Tutorial MOO ICT.exe
 C:\Users\mathi\Documents\B2\projet c#\GREDT_MATHIS_WFA\Platform Game Tutorial MOO ICT\obj\Debug\Platform Game Tutorial MOO ICT.pdb
+C:\Users\mathi\Documents\B2\projet c#\GREDT_MATHIS_WFA\Platform Game Tutorial MOO ICT\obj\Debug\Platform_Game_Tutorial_MOO_ICT.Menu.resources

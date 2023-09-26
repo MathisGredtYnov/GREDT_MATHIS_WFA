@@ -67,7 +67,6 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox30 = new System.Windows.Forms.PictureBox();
             this.pageSetupDialog1 = new System.Windows.Forms.PageSetupDialog();
             ((System.ComponentModel.ISupportInitialize)(this.door)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -104,7 +103,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).BeginInit();
             this.SuspendLayout();
             // 
             // txtScore
@@ -136,7 +134,6 @@
             this.door.TabIndex = 2;
             this.door.TabStop = false;
             this.door.Tag = "door";
-            this.door.Click += new System.EventHandler(this.door_Click);
             // 
             // pictureBox6
             // 
@@ -156,26 +153,26 @@
             // 
             this.enemyTwo.BackColor = System.Drawing.Color.Transparent;
             this.enemyTwo.Image = ((System.Drawing.Image)(resources.GetObject("enemyTwo.Image")));
-            this.enemyTwo.Location = new System.Drawing.Point(360, 616);
+            this.enemyTwo.Location = new System.Drawing.Point(401, 622);
             this.enemyTwo.Name = "enemyTwo";
-            this.enemyTwo.Size = new System.Drawing.Size(55, 40);
+            this.enemyTwo.Size = new System.Drawing.Size(40, 35);
             this.enemyTwo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.enemyTwo.TabIndex = 4;
             this.enemyTwo.TabStop = false;
             this.enemyTwo.Tag = "enemy";
+            this.enemyTwo.Click += new System.EventHandler(this.enemyTwo_Click);
             // 
             // enemyOne
             // 
             this.enemyOne.BackColor = System.Drawing.Color.Transparent;
             this.enemyOne.Image = ((System.Drawing.Image)(resources.GetObject("enemyOne.Image")));
-            this.enemyOne.Location = new System.Drawing.Point(473, 357);
+            this.enemyOne.Location = new System.Drawing.Point(473, 362);
             this.enemyOne.Name = "enemyOne";
-            this.enemyOne.Size = new System.Drawing.Size(55, 40);
+            this.enemyOne.Size = new System.Drawing.Size(40, 35);
             this.enemyOne.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.enemyOne.TabIndex = 3;
             this.enemyOne.TabStop = false;
             this.enemyOne.Tag = "enemy";
-            this.enemyOne.Click += new System.EventHandler(this.enemyOne_Click_1);
             // 
             // pictureBox28
             // 
@@ -474,7 +471,6 @@
             this.player.TabIndex = 2;
             this.player.TabStop = false;
             this.player.Tag = "door";
-            this.player.Click += new System.EventHandler(this.player_Click);
             // 
             // pictureBox8
             // 
@@ -517,7 +513,6 @@
             this.pictureBox5.TabIndex = 1;
             this.pictureBox5.TabStop = false;
             this.pictureBox5.Tag = "platform";
-            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // pictureBox4
             // 
@@ -589,17 +584,6 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Tag = "platform";
             // 
-            // pictureBox30
-            // 
-            this.pictureBox30.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox30.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox30.Image")));
-            this.pictureBox30.Location = new System.Drawing.Point(48, 285);
-            this.pictureBox30.Name = "pictureBox30";
-            this.pictureBox30.Size = new System.Drawing.Size(85, 216);
-            this.pictureBox30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox30.TabIndex = 25;
-            this.pictureBox30.TabStop = false;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -641,7 +625,6 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtScore);
-            this.Controls.Add(this.pictureBox30);
             this.Controls.Add(this.door);
             this.Controls.Add(this.enemyOne);
             this.Controls.Add(this.enemyTwo);
@@ -686,7 +669,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -730,7 +712,6 @@
         private System.Windows.Forms.PictureBox pictureBox27;
         private System.Windows.Forms.PictureBox pictureBox28;
         private System.Windows.Forms.PictureBox pictureBox29;
-        private System.Windows.Forms.PictureBox pictureBox30;
         private System.Windows.Forms.PageSetupDialog pageSetupDialog1;
     }
 }

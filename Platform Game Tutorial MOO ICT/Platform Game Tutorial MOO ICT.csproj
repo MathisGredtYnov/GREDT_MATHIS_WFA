@@ -52,10 +52,19 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -81,18 +90,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\background.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\platform.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\platform1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\platform2.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\coin.gif" />
   </ItemGroup>
   <ItemGroup>
@@ -102,31 +99,10 @@
     <None Include="Resources\portail.gif" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\background1.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\background2.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\echelle.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\echelle.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\personnage.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\mob.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\mob1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\mob2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\personnage1.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\personnage_droite.png" />
@@ -136,6 +112,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Megalovania.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Overwatch-Victory.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\you-are-dead.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

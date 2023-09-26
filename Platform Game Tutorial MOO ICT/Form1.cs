@@ -28,11 +28,16 @@ namespace Platform_Game_Tutorial_MOO_ICT
         int enemyOneSpeed = 5;
         int enemyTwoSpeed = 3;
         private readonly SoundPlayer backgroundMusic;
+        private readonly SoundPlayer victorybackgroundMusic;
+        private readonly SoundPlayer defeatbackgroundMusic;
+        
 
         public Form1()
         {
             InitializeComponent();
             backgroundMusic = new SoundPlayer(Properties.Resources.Megalovania);
+            victorybackgroundMusic = new SoundPlayer(Properties.Resources.Overwatch_Victory);
+            defeatbackgroundMusic = new SoundPlayer(Properties.Resources.you_are_dead);
             backgroundMusic.PlayLooping();
                   
         }
@@ -65,7 +70,7 @@ namespace Platform_Game_Tutorial_MOO_ICT
             }
             else
             {
-                jumpSpeed = 10;
+                jumpSpeed = 8;
             }
 
             foreach(Control x in this.Controls)
@@ -79,19 +84,20 @@ namespace Platform_Game_Tutorial_MOO_ICT
                         if (player.Bounds.IntersectsWith(x.Bounds))
                         {
                             force = 8;
-                            player.Top = x.Top - player.Height;
+                            if (!jumping)
+                            {
+                                jumpSpeed = 0;
+                            } else jumpSpeed = -8;
+                            player.Top = x.Top - player.Height +1;
 
 
                             if ((string)x.Name == "horizontalPlatform" && goLeft == false || (string)x.Name == "horizontalPlatform" && goRight == false)
                             {
                                 player.Left -= horizontalSpeed;
                             }
-
-
                         }
 
                         x.BringToFront();
-
                     }
 
                     if ((string)x.Tag == "coin")
@@ -111,6 +117,7 @@ namespace Platform_Game_Tutorial_MOO_ICT
                             gameTimer.Stop();
                             isGameOver = true;
                             txtScore.Text = "Score: " + score + Environment.NewLine + "You were killed in your journey!!";
+                            defeatbackgroundMusic.Play();
                         }
                     }
                 }
@@ -152,6 +159,7 @@ namespace Platform_Game_Tutorial_MOO_ICT
                 gameTimer.Stop();
                 isGameOver = true;
                 txtScore.Text = "Score: " + score + Environment.NewLine + "You fell to your death!";
+                defeatbackgroundMusic.Play();
             }
 
             if (player.Bounds.IntersectsWith(door.Bounds) && score == 22)
@@ -159,13 +167,12 @@ namespace Platform_Game_Tutorial_MOO_ICT
                 gameTimer.Stop();
                 isGameOver = true;
                 txtScore.Text = "Score: " + score + Environment.NewLine + "Your quest is complete!";
+                victorybackgroundMusic.Play();
             }
             else
             {
                 txtScore.Text = "Score: " + score + Environment.NewLine + "Collect all the coins";
             }
-
-
         }
 
         private void enemyOne_Click(object sender, EventArgs e)
@@ -178,22 +185,12 @@ namespace Platform_Game_Tutorial_MOO_ICT
 
         }
 
-        private void enemyOne_Click_1(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-
+            Application.Exit();
         }
 
-        private void pictureBox5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void player_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void door_Click(object sender, EventArgs e)
+        private void enemyTwo_Click(object sender, EventArgs e)
         {
 
         }
@@ -203,14 +200,12 @@ namespace Platform_Game_Tutorial_MOO_ICT
             if (e.KeyCode == Keys.Left)
             {
                 goLeft = true;
-                // Chargez l'image du personnage qui regarde vers la gauche
-                player.Image = Properties.Resources.personnage_gauche; // Remplacez "left_image" par le nom de votre image pour la gauche
+                player.Image = Properties.Resources.personnage_gauche; 
             }
             if (e.KeyCode == Keys.Right)
             {
                 goRight = true;
-                // Chargez l'image du personnage qui regarde vers la droite
-                player.Image = Properties.Resources.personnage_droite; // Remplacez "right_image" par le nom de votre image pour la droite
+                player.Image = Properties.Resources.personnage_droite;
             }
             if (e.KeyCode == Keys.Space && jumping == false)
             {
@@ -255,11 +250,9 @@ namespace Platform_Game_Tutorial_MOO_ICT
                 if (x is PictureBox && x.Visible == false)
                 {
                     x.Visible = true;
+                    backgroundMusic.Play();
                 }
             }
-
-
-            // reset the position of player, platform and enemies
 
             player.Left = 60;
             player.Top = 680;

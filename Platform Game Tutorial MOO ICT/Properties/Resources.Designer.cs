@@ -63,26 +63,6 @@ namespace Platform_Game_Tutorial_MOO_ICT.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap background1 {
-            get {
-                object obj = ResourceManager.GetObject("background1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap background2 {
-            get {
-                object obj = ResourceManager.GetObject("background2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap coin {
             get {
                 object obj = ResourceManager.GetObject("coin", resourceCulture);
@@ -110,12 +90,11 @@ namespace Platform_Game_Tutorial_MOO_ICT.Properties {
         }
         
         /// <summary>
-        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        ///   Recherche une ressource localisée de type System.IO.UnmanagedMemoryStream semblable à System.IO.MemoryStream.
         /// </summary>
-        internal static System.Drawing.Bitmap personnage {
+        internal static System.IO.UnmanagedMemoryStream Overwatch_Victory {
             get {
-                object obj = ResourceManager.GetObject("personnage", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
+                return ResourceManager.GetStream("Overwatch_Victory", resourceCulture);
             }
         }
         
@@ -156,6 +135,15 @@ namespace Platform_Game_Tutorial_MOO_ICT.Properties {
             get {
                 object obj = ResourceManager.GetObject("terre", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.IO.UnmanagedMemoryStream semblable à System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream you_are_dead {
+            get {
+                return ResourceManager.GetStream("you_are_dead", resourceCulture);
             }
         }
     }
