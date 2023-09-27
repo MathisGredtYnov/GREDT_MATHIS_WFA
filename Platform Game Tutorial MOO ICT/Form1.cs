@@ -21,6 +21,7 @@ namespace Platform_Game_Tutorial_MOO_ICT
         int force;
         int score = 0;
         int playerSpeed = 7;
+        bool canjump = true;
 
         int horizontalSpeed = 5;
         int verticalSpeed = 3;
@@ -39,9 +40,7 @@ namespace Platform_Game_Tutorial_MOO_ICT
             victorybackgroundMusic = new SoundPlayer(Properties.Resources.Overwatch_Victory);
             defeatbackgroundMusic = new SoundPlayer(Properties.Resources.you_are_dead);
             backgroundMusic.PlayLooping();
-                  
         }
-
 
         private void MainGameTimerEvent(object sender, EventArgs e)
         {
@@ -77,26 +76,40 @@ namespace Platform_Game_Tutorial_MOO_ICT
             {
                 if (x is PictureBox)
                 {
-
-
                     if ((string)x.Tag == "platform")
                     {
                         if (player.Bounds.IntersectsWith(x.Bounds))
                         {
+                            
+
+                            if (player.Bottom > x.Top && player.Top < x.Top)
+                            {
+                                player.Top = x.Top - player.Height + 1;
+                                jumping = false;
+                                canjump = true;
+                            }
+                            else
+                            {
+                                if (player.Left < x.Left && player.Right > x.Left)
+                                {
+                                    player.Left = x.Left;
+                                }
+                                else if (player.Right > x.Right && player.Left < x.Right)
+                                {
+                                    player.Left = x.Right;
+                                }
+                            }
+
                             force = 8;
                             if (!jumping)
                             {
                                 jumpSpeed = 0;
-                            } else jumpSpeed = -8;
-                            player.Top = x.Top - player.Height +1;
-
-
-                            if ((string)x.Name == "horizontalPlatform" && goLeft == false || (string)x.Name == "horizontalPlatform" && goRight == false)
+                            }
+                            else
                             {
-                                player.Left -= horizontalSpeed;
+                                jumpSpeed = -8;
                             }
                         }
-
                         x.BringToFront();
                     }
 
@@ -202,9 +215,15 @@ namespace Platform_Game_Tutorial_MOO_ICT
                 goRight = true;
                 player.Image = Properties.Resources.personnage_droite;
             }
-            if (e.KeyCode == Keys.Space && jumping == false)
+            if (e.KeyCode == Keys.Space && canjump)
             {
                 jumping = true;
+                canjump = false;
+                jumpSpeed = -8;
+            }
+            if (e.KeyCode == Keys.Escape)
+            {
+                Application.Exit();
             }
         }
 

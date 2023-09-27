@@ -68,6 +68,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pageSetupDialog1 = new System.Windows.Forms.PageSetupDialog();
+            this.pictureBox30 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.door)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.enemyTwo)).BeginInit();
@@ -103,6 +104,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).BeginInit();
             this.SuspendLayout();
             // 
             // txtScore
@@ -126,7 +128,6 @@
             // 
             this.door.BackColor = System.Drawing.Color.Transparent;
             this.door.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.door.Image = global::Platform_Game_Tutorial_MOO_ICT.Properties.Resources.portail;
             this.door.Location = new System.Drawing.Point(12, 10);
             this.door.Name = "door";
             this.door.Size = new System.Drawing.Size(42, 58);
@@ -178,7 +179,6 @@
             // 
             this.pictureBox28.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox28.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox28.Image = global::Platform_Game_Tutorial_MOO_ICT.Properties.Resources.coin;
             this.pictureBox28.Location = new System.Drawing.Point(609, 539);
             this.pictureBox28.Name = "pictureBox28";
             this.pictureBox28.Size = new System.Drawing.Size(25, 25);
@@ -191,7 +191,6 @@
             // 
             this.pictureBox29.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox29.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox29.Image = global::Platform_Game_Tutorial_MOO_ICT.Properties.Resources.coin;
             this.pictureBox29.Location = new System.Drawing.Point(568, 539);
             this.pictureBox29.Name = "pictureBox29";
             this.pictureBox29.Size = new System.Drawing.Size(25, 25);
@@ -204,7 +203,6 @@
             // 
             this.pictureBox26.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox26.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox26.Image = global::Platform_Game_Tutorial_MOO_ICT.Properties.Resources.coin;
             this.pictureBox26.Location = new System.Drawing.Point(483, 614);
             this.pictureBox26.Name = "pictureBox26";
             this.pictureBox26.Size = new System.Drawing.Size(25, 25);
@@ -217,7 +215,6 @@
             // 
             this.pictureBox27.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox27.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox27.Image = global::Platform_Game_Tutorial_MOO_ICT.Properties.Resources.coin;
             this.pictureBox27.Location = new System.Drawing.Point(442, 614);
             this.pictureBox27.Name = "pictureBox27";
             this.pictureBox27.Size = new System.Drawing.Size(25, 25);
@@ -230,7 +227,6 @@
             // 
             this.pictureBox24.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox24.Image = global::Platform_Game_Tutorial_MOO_ICT.Properties.Resources.coin;
             this.pictureBox24.Location = new System.Drawing.Point(370, 614);
             this.pictureBox24.Name = "pictureBox24";
             this.pictureBox24.Size = new System.Drawing.Size(25, 25);
@@ -243,7 +239,6 @@
             // 
             this.pictureBox25.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox25.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox25.Image = global::Platform_Game_Tutorial_MOO_ICT.Properties.Resources.coin;
             this.pictureBox25.Location = new System.Drawing.Point(329, 614);
             this.pictureBox25.Name = "pictureBox25";
             this.pictureBox25.Size = new System.Drawing.Size(25, 25);
@@ -256,7 +251,6 @@
             // 
             this.pictureBox22.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox22.Image = global::Platform_Game_Tutorial_MOO_ICT.Properties.Resources.coin;
             this.pictureBox22.Location = new System.Drawing.Point(247, 539);
             this.pictureBox22.Name = "pictureBox22";
             this.pictureBox22.Size = new System.Drawing.Size(25, 25);
@@ -269,7 +263,6 @@
             // 
             this.pictureBox23.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox23.Image = global::Platform_Game_Tutorial_MOO_ICT.Properties.Resources.coin;
             this.pictureBox23.Location = new System.Drawing.Point(206, 539);
             this.pictureBox23.Name = "pictureBox23";
             this.pictureBox23.Size = new System.Drawing.Size(25, 25);
@@ -282,7 +275,6 @@
             // 
             this.pictureBox20.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox20.Image = global::Platform_Game_Tutorial_MOO_ICT.Properties.Resources.coin;
             this.pictureBox20.Location = new System.Drawing.Point(108, 456);
             this.pictureBox20.Name = "pictureBox20";
             this.pictureBox20.Size = new System.Drawing.Size(25, 25);
@@ -295,7 +287,6 @@
             // 
             this.pictureBox21.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox21.Image = global::Platform_Game_Tutorial_MOO_ICT.Properties.Resources.coin;
             this.pictureBox21.Location = new System.Drawing.Point(67, 456);
             this.pictureBox21.Name = "pictureBox21";
             this.pictureBox21.Size = new System.Drawing.Size(25, 25);
@@ -308,7 +299,6 @@
             // 
             this.pictureBox18.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox18.Image = global::Platform_Game_Tutorial_MOO_ICT.Properties.Resources.coin;
             this.pictureBox18.Location = new System.Drawing.Point(442, 352);
             this.pictureBox18.Name = "pictureBox18";
             this.pictureBox18.Size = new System.Drawing.Size(25, 25);
@@ -321,7 +311,6 @@
             // 
             this.pictureBox19.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox19.Image = global::Platform_Game_Tutorial_MOO_ICT.Properties.Resources.coin;
             this.pictureBox19.Location = new System.Drawing.Point(401, 352);
             this.pictureBox19.Name = "pictureBox19";
             this.pictureBox19.Size = new System.Drawing.Size(25, 25);
@@ -334,7 +323,6 @@
             // 
             this.pictureBox16.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox16.Image = global::Platform_Game_Tutorial_MOO_ICT.Properties.Resources.coin;
             this.pictureBox16.Location = new System.Drawing.Point(353, 352);
             this.pictureBox16.Name = "pictureBox16";
             this.pictureBox16.Size = new System.Drawing.Size(25, 25);
@@ -347,7 +335,6 @@
             // 
             this.pictureBox17.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox17.Image = global::Platform_Game_Tutorial_MOO_ICT.Properties.Resources.coin;
             this.pictureBox17.Location = new System.Drawing.Point(312, 352);
             this.pictureBox17.Name = "pictureBox17";
             this.pictureBox17.Size = new System.Drawing.Size(25, 25);
@@ -360,7 +347,6 @@
             // 
             this.pictureBox12.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox12.Image = global::Platform_Game_Tutorial_MOO_ICT.Properties.Resources.coin;
             this.pictureBox12.Location = new System.Drawing.Point(269, 352);
             this.pictureBox12.Name = "pictureBox12";
             this.pictureBox12.Size = new System.Drawing.Size(25, 25);
@@ -373,7 +359,6 @@
             // 
             this.pictureBox15.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox15.Image = global::Platform_Game_Tutorial_MOO_ICT.Properties.Resources.coin;
             this.pictureBox15.Location = new System.Drawing.Point(228, 352);
             this.pictureBox15.Name = "pictureBox15";
             this.pictureBox15.Size = new System.Drawing.Size(25, 25);
@@ -386,7 +371,6 @@
             // 
             this.pictureBox10.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox10.Image = global::Platform_Game_Tutorial_MOO_ICT.Properties.Resources.coin;
             this.pictureBox10.Location = new System.Drawing.Point(108, 253);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(25, 25);
@@ -399,7 +383,6 @@
             // 
             this.pictureBox11.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox11.Image = global::Platform_Game_Tutorial_MOO_ICT.Properties.Resources.coin;
             this.pictureBox11.Location = new System.Drawing.Point(67, 253);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(25, 25);
@@ -412,7 +395,6 @@
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox7.Image = global::Platform_Game_Tutorial_MOO_ICT.Properties.Resources.coin;
             this.pictureBox7.Location = new System.Drawing.Point(312, 98);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(25, 25);
@@ -425,7 +407,6 @@
             // 
             this.pictureBox9.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox9.Image = global::Platform_Game_Tutorial_MOO_ICT.Properties.Resources.coin;
             this.pictureBox9.Location = new System.Drawing.Point(271, 98);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(25, 25);
@@ -438,7 +419,6 @@
             // 
             this.pictureBox14.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox14.Image = global::Platform_Game_Tutorial_MOO_ICT.Properties.Resources.coin;
             this.pictureBox14.Location = new System.Drawing.Point(401, 98);
             this.pictureBox14.Name = "pictureBox14";
             this.pictureBox14.Size = new System.Drawing.Size(25, 25);
@@ -451,7 +431,6 @@
             // 
             this.pictureBox13.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox13.Image = global::Platform_Game_Tutorial_MOO_ICT.Properties.Resources.coin;
             this.pictureBox13.Location = new System.Drawing.Point(360, 98);
             this.pictureBox13.Name = "pictureBox13";
             this.pictureBox13.Size = new System.Drawing.Size(25, 25);
@@ -584,6 +563,17 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Tag = "platform";
             // 
+            // pictureBox30
+            // 
+            this.pictureBox30.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox30.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox30.Image")));
+            this.pictureBox30.Location = new System.Drawing.Point(471, 388);
+            this.pictureBox30.Name = "pictureBox30";
+            this.pictureBox30.Size = new System.Drawing.Size(57, 268);
+            this.pictureBox30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox30.TabIndex = 25;
+            this.pictureBox30.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -592,6 +582,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(654, 761);
+            this.Controls.Add(this.pictureBox30);
             this.Controls.Add(this.player);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox28);
@@ -669,6 +660,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -713,6 +705,7 @@
         private System.Windows.Forms.PictureBox pictureBox28;
         private System.Windows.Forms.PictureBox pictureBox29;
         private System.Windows.Forms.PageSetupDialog pageSetupDialog1;
+        private System.Windows.Forms.PictureBox pictureBox30;
     }
 }
 
