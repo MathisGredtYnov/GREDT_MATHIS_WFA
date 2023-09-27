@@ -99,7 +99,6 @@ namespace Platform_Game_Tutorial_MOO_ICT
                                     player.Left = x.Right;
                                 }
                             }
-
                             force = 8;
                             if (!jumping)
                             {
@@ -175,7 +174,7 @@ namespace Platform_Game_Tutorial_MOO_ICT
                 defeatbackgroundMusic.Play();
             }
 
-            if (player.Bounds.IntersectsWith(door.Bounds) && score == 22)
+            if (player.Bounds.IntersectsWith(door.Bounds) && score == 24)
             {
                 gameTimer.Stop();
                 isGameOver = true;
@@ -199,6 +198,16 @@ namespace Platform_Game_Tutorial_MOO_ICT
         }
 
         private void enemyTwo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox19_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox28_Click(object sender, EventArgs e)
         {
 
         }
