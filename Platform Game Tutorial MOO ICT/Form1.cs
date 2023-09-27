@@ -80,14 +80,31 @@ namespace Platform_Game_Tutorial_MOO_ICT
                     {
                         if (player.Bounds.IntersectsWith(x.Bounds))
                         {
-                            
+                            if (player.Top < x.Bottom + x.Height && player.Bottom > x.Bottom)
 
-                            if (player.Bottom > x.Top && player.Top < x.Top)
                             {
+                                
+                                player.Top = x.Top + x.Height;
+                                force = 0;
+                                jumping = false;
+                            }
+
+                            else if (player.Bottom > x.Top && player.Top < x.Top)
+                            {
+                                force = 8;
+                                if (!jumping)
+                                {
+                                    jumpSpeed = 0;
+                                }
+                                else
+                                {
+                                    jumpSpeed = -8;
+                                }
                                 player.Top = x.Top - player.Height + 1;
                                 jumping = false;
                                 canjump = true;
-                            }
+                            } 
+                           
                             else
                             {
                                 if (player.Left < x.Left && player.Right > x.Left)
@@ -99,17 +116,7 @@ namespace Platform_Game_Tutorial_MOO_ICT
                                     player.Left = x.Right;
                                 }
                             }
-                            force = 8;
-                            if (!jumping)
-                            {
-                                jumpSpeed = 0;
-                            }
-                            else
-                            {
-                                jumpSpeed = -8;
-                            }
                         }
-                        x.BringToFront();
                     }
 
                     if ((string)x.Tag == "coin")
