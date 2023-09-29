@@ -23,5 +23,10 @@ namespace Platform_Game_Tutorial_MOO_ICT
             form1.Show();
             this.Hide();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
